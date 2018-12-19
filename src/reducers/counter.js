@@ -10,6 +10,9 @@ export default (state = 0, action) => {
         case C.COUNTER_INCREMENT:  
             return state + 1
             
+        case C.COUNTER_RESET:
+            return state = 0
+            
         default: 
             return state
     }
